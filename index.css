@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 body {
-  max-width: 996px;
+  width: 90%;
+  max-width: 680px;
   margin: auto;
   display: flex;
   align-content: center;
@@ -29,6 +30,31 @@ h2 {
   display: block;
   margin: 2%;
 }
-.yt .pdf > iframe {
-  width: 80%;
+
+div > iframe {
+  max-width: 560px;
+}
+
+.yt {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.yt::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+}
+
+.yt iframe {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pdf iframe {
+  width: 100%;
 }
